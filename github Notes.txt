@@ -1,0 +1,26 @@
+npm i gh-pages --save-dev : to add github pages tot he dev folder
+go to package.json
+
+add to top:
+"homepage": "http://(githubusername).github.io/(githubrepositoryname)",
+
+add to scripts:
+predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+in terminal do:
+git init
+git remote add origin https://github.com/(githubusername)/(repositoryname).git
+
+use git add . - to add everything
+
+git commit -m "name of commit"
+
+use below commands to confirm who you are:
+git config --global user.email "your email"
+git config --global user.name "your name"
+
+npm run deploy - to deploy git
+
+push code to github:
+git push -u origin 
